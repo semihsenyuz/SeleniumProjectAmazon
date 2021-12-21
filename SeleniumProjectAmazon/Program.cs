@@ -18,11 +18,11 @@ namespace SeleniumProjectAmazon
             driver.FindElement(By.Id("sp-cc-accept")).Click();
             //Giriş Butonu Tıklanır
             driver.FindElement(By.Id("a-autoid-2-announce")).Click();
-            //Kullanıcı Adı Yazılır
-            driver.FindElement(By.Id("ap_email")).SendKeys("+905316609913");
+            //telNo yazan yere Kullanıcı Adı Yazılır
+            driver.FindElement(By.Id("ap_email")).SendKeys("telNo");
             driver.FindElement(By.Id("continue")).Click();
-            //Sifre Yazılır
-            driver.FindElement(By.Id("ap_password")).SendKeys("546363");
+            //password yazan yere sifre Yazılır
+            driver.FindElement(By.Id("ap_password")).SendKeys("password");
             driver.FindElement(By.Id("signInSubmit")).Click();
             //Bilgisayar Seçeneği Secilir
             driver.FindElement(By.XPath(".//*[@id='searchDropdownBox']/option[4]")).Click();
